@@ -4,24 +4,24 @@ import java.util.HashSet;
 import java.util.Objects;
 
 public class HashSetEmployee {
-    private int id;
+    private int idd;
     private String name;
     private long salary;
     private String department;
 
     public HashSetEmployee(int id, String name, long salary, String department) {
-        this.id = id;
+        this.idd = idd;
         this.name = name;
         this.salary = salary;
         this.department = department;
     }
 
-    public int getId() {
-        return id;
+    public int getIdd() {
+        return idd;
     }
 
     public void setId(int id) {
-        this.id = id;
+        this.idd = idd;
     }
 
     public String getName() {
@@ -61,7 +61,7 @@ public class HashSetEmployee {
     @Override
     public boolean equals(Object o) {
         HashSetEmployee employee = (HashSetEmployee) o;
-        if (employee.id == this.id) {
+        if (employee.idd == this.idd) {
             employee.setName(this.name);
             return true;
         } else {
@@ -71,7 +71,7 @@ public class HashSetEmployee {
 
     @Override
     public int hashCode() {
-        return this.id;
+        return this.idd;
     }
 
     public static void main(String[] args) {
